@@ -1,11 +1,10 @@
 // Inicializace mapy - výchozí pohled na střed ČR
 var mapa = L.map('mapa').setView([49.8, 15.5], 7);
 
-// Podkladová dlaždicová vrstva (OpenStreetMap)
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-  subdomains: 'abcd',
-  maxZoom: 20,
-  attribution: '&copy; OpenStreetMap přispěvatelé &copy; CARTO'
+// Esri World Topo (topografická, hezká pro ČR)
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+  maxZoom: 19,
+  attribution: 'Tiles &copy; Esri, HERE, Garmin, OpenStreetMap contributors'
 }).addTo(mapa);
 
 // Pomocná funkce: ochrana proti vložení HTML z dat
