@@ -24,6 +24,18 @@
         "type": "Point",
         "coordinates": [14.4378, 50.0755]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "nazev": "Suchdol nad Odrou",
+        "popisek": "Obec v okrese Nový Jičín v Moravskoslezském kraji, ležící na řece Odře."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.92806, 49.65583]
+      }
     }
   ]
 }
